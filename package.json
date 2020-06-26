@@ -1,10 +1,39 @@
 {
   "name": "vue-toaster-snackbar",
+  "license": "MIT",
+  "description": "Responsive Toaster and snackbar plugin with advanced features for Vue applications",
+  "author": "Suresh Babu Sakthi <babu029.8b@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zxqp/vue-toaster-snackbar.git"
+  },
+  "keywords": [
+    "snackbar",
+    "toast",
+    "toaster",
+    "vue",
+    "vue-toaster-snackbar",
+    "vue-toast",
+    "vue-toaster",
+    "vue-snackbar",
+    "toasted",
+    "responsive",
+    "touch-compatible",
+    "touch"
+  ],
   "version": "0.1.29",
   "private": false,
   "main": "./dist/vueToaster.common.js",
-  "types": "./types/*",
-  "files": ["types/*","dist/*","src/*","public/*","*.json","*.js","*.ts"],
+  "types": "./types/",
+  "files": [
+    "types/*",
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js",
+    "*.ts"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -15,7 +44,7 @@
   "dependencies": {
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^8.4.2"
+    "vue-property-decorator": "^9.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
