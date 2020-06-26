@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+exports.Prop = exports.Component = exports.Vue = exports._Vue = void 0;
+const vue_1 = require("vue");
+exports.Vue = vue_1["default"];
+const vue_2 = require("vue");
+exports._Vue = vue_2["default"];
+const vue_property_decorator_1 = require("vue-property-decorator");
+exports.Component = vue_property_decorator_1.Component;
+exports.Prop = vue_property_decorator_1.Prop;
