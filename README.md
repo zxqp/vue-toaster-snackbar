@@ -26,11 +26,12 @@ yarn add vue-toaster-snackbar
 ```bash
 // register the plugin on vue  
 import ToastSnackbar from 'vue-toaster-snackbar';  
+import "vue-toaster-snackbar/public/toast.scss";  
 
 Vue.use(ToastSnackbar)  
 
-//Declare in top of your root component 
-...App.vue
+//Declare the component 
+./App.vue
 <template>
   <div id="app">
     <Toast></Toast>
@@ -66,10 +67,10 @@ ToastMessage  = {
 this.$toast.custom(ToastMessage)  
 
 // Listen to event
-this.$root("emitEventName",emitEventValue(value)=>{
-...
-do routing or actions based on value
-})
+this.$root.$on(this.emitName, (value) => {
+      .....
+      do routing or actions based on value
+});
 ```
 
 # Coming soon  :heart_eyes:
