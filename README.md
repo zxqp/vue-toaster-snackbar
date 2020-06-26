@@ -1,4 +1,5 @@
 # vue-toaster-snackbar
+<img src="https://badgen.net/npm/v/vue-toaster-snackbar"> <img src="https://badgen.net/npm/dw/vue-toaster-snackbar"> <img src="https://badgen.net/npm/license/vue-toaster-snackbar">  
 Vue Toaster Snackbar is one of the best plugin available with toast and snackbar custom features.  
 
 ## Features
@@ -67,7 +68,7 @@ ToastMessage  = {
 this.$toast.custom(ToastMessage)  
 
 // Action on event
-this.$root.$on(this.emitName, (value) => {
+this.$root.$on("emitEventName", (value) => {
       .....
       console.log(value);
       do routing or actions based on value
