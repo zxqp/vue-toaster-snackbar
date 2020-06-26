@@ -66,11 +66,13 @@ ToastMessage  = {
 
 this.$toast.custom(ToastMessage)  
 
-// Listen to event
+// Action on event
 this.$root.$on(this.emitName, (value) => {
       .....
+      console.log(value);
       do routing or actions based on value
 });
+
 ```
 
 # Coming soon  :heart_eyes:
