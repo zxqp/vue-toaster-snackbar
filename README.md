@@ -45,10 +45,10 @@ this.$toast.snackbar("warning", "This is a warning message")
 this.$toast.snackbar("error", "This is an error message")  
 
 // Block  
-this.$toast.block("success", "This is a success message")
-this.$toast.block("info", "This is an info message")
-this.$toast.block("warning", "This is a warning message")
-this.$toast.block("error", "This is an error message")  
+this.$toast.block("success", "Success", "This is a success message description")
+this.$toast.block("info", "Info", "This is an info message description")
+this.$toast.block("warning", "Warning", "This is a warning message description")
+this.$toast.block("error", "Error", "This is an error message description")  
 
 // Custom
 ToastMessage  = {
