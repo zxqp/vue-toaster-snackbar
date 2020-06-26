@@ -5,11 +5,13 @@
     aria-live="polite"
     style="display: block;"
     @click="emitEvent(toastMessage.emitEventName, toastMessage.emitEventValue)"
+    @mouseover="pauseProgress(toastMessage)"
+    @mouseleave="resumeProgress(toastMessage)"
   >
     <div
       v-if="toastMessage.showProgress"
       class="toast-progress"
-      style="width: 0%;"
+      :style="{ width: getCurrentProgress(toastMessage) + '%' }"
     ></div>
     <button
       type="button"
@@ -28,13 +30,17 @@
 import { Vue, Component, Prop } from "../utils/vue-imports";
 import { ToastDataType } from "../ts/model";
 import { ToastMixins } from "../ts/mixin";
+import { Mixins } from "vue-property-decorator";
 
 @Component({
-  name: "block",
-  mixins: [ToastMixins]
+  name: "block"
 })
-export default class Block extends Vue {
+export default class Block extends Mixins(Vue, ToastMixins) {
   @Prop({ type: Object, required: true })
   toastMessage!: ToastDataType;
+
+  mounted() {
+    if (this.toastMessage.timeout > 0) this.startTimeout(this.toastMessage);
+  }
 }
 </script>

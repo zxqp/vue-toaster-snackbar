@@ -87,7 +87,6 @@ export default class Toast extends Vue {
 
   addMessage(payload: T) {
     const newMessage = { ...payload };
-    // newMessage.id = Math.floor(Math.random() * 100);
     newMessage.id = Math.random();
     eval("this." + newMessage.position + "Messages").unshift(newMessage);
   }

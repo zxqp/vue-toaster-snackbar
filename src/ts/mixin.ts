@@ -18,7 +18,7 @@ export const ToastMixins = Vue.extend({
       const start = () => {
         toastData.animate = requestAnimationFrame(timestamp => {
           const timeElapsed = timestamp + startFrom - startTime;
-          if (toastData.pauseTime) { 
+          if (toastData.pauseTime) {
             cancelAnimationFrame(toastData.animate);
             return;
           } else if (timeElapsed < toastData.timeout) {
@@ -46,10 +46,7 @@ export const ToastMixins = Vue.extend({
     resumeProgress(toastData: ToastDataType) {
       if (toastData.timeout <= 0) return;
       toastData.pauseTime = false;
-      this.startTimeout(
-        toastData,
-        toastData.timeout * toastData.progress
-      );
+      this.startTimeout(toastData, toastData.timeout * toastData.progress);
     },
 
     getCurrentProgress(toastData: ToastDataType) {

@@ -13,10 +13,12 @@ Vue Toaster Snackbar is one of the best plugin available with toast and snackbar
 - Timeout (default: 3 seconds, infinite: 0)
 - On click actions with custom emit event and value
 
-## Getting started
+## Getting Started
+
+### Install using npm or yarn
 
 ```bash
-# Install with npm
+# Install using npm
 npm install vue-toaster-snackbar
 
 # or Install with yarn
@@ -36,6 +38,41 @@ Vue.use(ToastSnackbar)
   </div>
 </template>
 
+```
+
+### Direct Installation
+
+```
+<!DOCTYPE html>
+<html>  
+  <head>  
+    <title>ToastSnackbar Vue app</title>  
+    <script src="https://unpkg.com/vue"></script>  
+    <script src="https://unpkg.com/vue-toaster-snackbar@1.0.1/dist/vueToaster.umd.js"></script>  
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-toaster-snackbar@1.0.1/public/toast.css" />  
+  </head>
+  <body>
+    <div id="app">
+      <Toast></Toast>
+      {{ message }}
+      <button v-on:click="clickMe">Click me!</button>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue!"
+        },
+        methods: {
+          clickMe() {
+            this.$toast.snackbar("success", "This is a success message");
+          }
+        },
+      });
+    </script>
+  </body>
+</html>
 ```
 
 ## Usage
