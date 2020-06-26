@@ -21,11 +21,7 @@ declare module "vue/types/vue" {
 }
 
 const install = (Vue: typeof _Vue): void => {
-  Vue.prototype.$add = (a: number, b: number): number => {
-    return a + b;
-  };
   Vue.prototype.$toast = Toaster;
-
   Vue.component("Toast", Toast);
 };
 
