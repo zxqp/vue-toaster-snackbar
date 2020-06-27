@@ -42,7 +42,7 @@ Vue.use(ToastSnackbar)
 
 ### Direct Installation
 
-[CodeSandbox example](https://)
+[CodeSandbox example](https://codesandbox.io/s/toastsnackbar-direct-usage-demo-nznnb)
 
 ```
 <!DOCTYPE html>
