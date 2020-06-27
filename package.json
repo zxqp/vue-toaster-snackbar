@@ -3,7 +3,8 @@
   "license": "MIT",
   "description": "Responsive Toaster and snackbar plugin with advanced features for Vue applications",
   "author": "Suresh Babu Sakthi <babu029.8b@gmail.com> (https://github.com/zxqp/)",
-  "homepage": "https://github.com/zxqp/vue-toaster-snackbar/#vue-toaster-snackbar",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "homepage": "https://github.com/zxqp/vue-toaster-snackbar/#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/zxqp/vue-toaster-snackbar.git"
