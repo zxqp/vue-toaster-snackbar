@@ -1225,6 +1225,8 @@ exports.ToastMixins = vue_1.default.extend({
             this.startTimeout(toastData, toastData.timeout * toastData.progress);
         },
         getCurrentProgress: function (toastData) {
+            if (toastData.progress == undefined)
+                toastData.progress = 0;
             if (Math.round(toastData.progress * 100) === 100) {
                 return 100;
             }
