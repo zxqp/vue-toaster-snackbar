@@ -42,14 +42,16 @@ Vue.use(ToastSnackbar)
 
 ### Direct Installation
 
+[CodeSandbox example](https://)
+
 ```
 <!DOCTYPE html>
 <html>  
   <head>  
     <title>ToastSnackbar Vue app</title>  
     <script src="https://unpkg.com/vue"></script>  
-    <script src="https://unpkg.com/vue-toaster-snackbar@1.0.1/dist/vueToaster.umd.js"></script>  
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-toaster-snackbar@1.0.1/public/toast.css" />  
+    <script src="https://unpkg.com/vue-toaster-snackbar@1.0.2/dist/vueToaster.umd.js"></script>  
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-toaster-snackbar@1.0.2/public/toast.css" />  
   </head>
   <body>
     <div id="app">
@@ -118,16 +120,17 @@ this.$root.$on("emitEventName", (value) => {
 
 ```
 
-# Coming soon  😍
+# Coming soon 😍
 
-- Live interactive demo (27-June-2020)
-- Sample Codes and examples (27-June-2020)
-- more docs (27-June-2020)
-- https://unpkg.com/vue-toaster-snackbar (27-June-2020)
+- [Please check here for upcoming features and updates](https://github.com/zxqp/vue-toaster-snackbar/projects/1)
 
 # Support
 
-- Encourage by giving me a [STAR ⭐️](https://github.com/zxqp/vue-toaster-snackbar)
+[Give me a Star⭐️](https://github.com/zxqp/vue-toaster-snackbar)
+
+[Buy me a ☕️!](https://www.buymeacoffee.com/zxqp)
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U11V1JJ)
 
 # License
 

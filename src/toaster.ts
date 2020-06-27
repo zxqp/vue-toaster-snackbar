@@ -74,7 +74,9 @@ const Toaster = {
       newMessage.status = "toast-" + newMessage.status;
     }
 
-    newMessage.progress = 0;
+    if (newMessage.progress == undefined) newMessage.progress = 0;
+    if (newMessage.pauseTime == undefined) newMessage.pauseTime = false;
+    if (newMessage.animate == undefined) newMessage.animate = 0;
 
     Events.$emit("add", newMessage);
   }

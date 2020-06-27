@@ -50,6 +50,7 @@ export const ToastMixins = Vue.extend({
     },
 
     getCurrentProgress(toastData: ToastDataType) {
+      if (toastData.progress == undefined) toastData.progress = 0;
       if (Math.round(toastData.progress * 100) === 100) {
         return 100;
       }
