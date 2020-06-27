@@ -130,7 +130,7 @@ this.$root.$on("emitEventName", (value) => {
 
 [Buy me a ☕️!](https://www.buymeacoffee.com/zxqp)
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U11V1JJ)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/sureshbabusakthi)
 
 # License
 
